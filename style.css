@@ -84,10 +84,16 @@ button.clicked {
 }
 
 section {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1; /* visible por defecto */
+  transform: translateY(0);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
+section.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
 
 section.visible {
   opacity: 1;
